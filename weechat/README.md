@@ -9,25 +9,28 @@
  $ openssl s_client -connect my.bouncer.net:6000 </dev/null 2>/dev/null | openssl x509 -in /dev/stdin -noout -fingerprint -sha256  | sed s/://g | cut -c 20-
 
 /server add [name] katiezone.biz/6000 -ssl -username=k8e/[network] -password=${sec.data.bncpass} -autoconnect
-/set irc.server.[name].ssl_fingerprint 0D47B9FA7EDDF7C79DC3C8226CDCE8391939BC533FBDFB682C8553A77D3B942B
+/set irc.server.[name].ssl_fingerprint 61298D370ECCE96A823D7A3376A9BE6D450D2CB5719D9BD3B51C133A605AB554
 
 
 ##[servers]
 
 /server add undernet katiezone.biz/6000 -ssl -username=k8e/undernet -password=${sec.data.bncpass} -autoconnect
-/set irc.server.undernet.ssl_fingerprint 0D47B9FA7EDDF7C79DC3C8226CDCE8391939BC533FBDFB682C8553A77D3B942B
+/set irc.server.undernet.ssl_fingerprint 61298D370ECCE96A823D7A3376A9BE6D450D2CB5719D9BD3B51C133A605AB554
+
+/server add irc-bonerjamz-us katiezone.biz/6000 -ssl -username=k8e/bonerjamz -password=${sec.data.bncpass} -autoconnect
+/set irc.server.irc-bonerjamz-us.ssl_fingerprint 61298D370ECCE96A823D7A3376A9BE6D450D2CB5719D9BD3B51C133A605AB554
 
 /server add freenode katiezone.biz/6000 -ssl -username=k8e/freenode -password=${sec.data.bncpass} -autoconnect
-/set irc.server.freenode.ssl_fingerprint 0D47B9FA7EDDF7C79DC3C8226CDCE8391939BC533FBDFB682C8553A77D3B942B
+/set irc.server.freenode.ssl_fingerprint 61298D370ECCE96A823D7A3376A9BE6D450D2CB5719D9BD3B51C133A605AB554
 
 /server add stl-tech katiezone.biz/6000 -ssl -username=k8e/stl-tech -password=${sec.data.bncpass} -autoconnect
-/set irc.server.stl-tech.ssl_fingerprint 0D47B9FA7EDDF7C79DC3C8226CDCE8391939BC533FBDFB682C8553A77D3B942B
+/set irc.server.stl-tech.ssl_fingerprint 61298D370ECCE96A823D7A3376A9BE6D450D2CB5719D9BD3B51C133A605AB554
 
 /server add lucsc katiezone.biz/6000 -ssl -username=k8e/lucsc-slack -password=${sec.data.bncpass} -autoconnect
-/set irc.server.lucsc.ssl_fingerprint 0D47B9FA7EDDF7C79DC3C8226CDCE8391939BC533FBDFB682C8553A77D3B942B
+/set irc.server.lucsc.ssl_fingerprint 61298D370ECCE96A823D7A3376A9BE6D450D2CB5719D9BD3B51C133A605AB554
 
 /server add DecentralizedWeb katiezone.biz/6000 -ssl -username=k8e/DecentralizedWeb -password=${sec.data.bncpass} -autoconnect
-/set irc.server.DecentralizedWeb.ssl_fingerprint 0D47B9FA7EDDF7C79DC3C8226CDCE8391939BC533FBDFB682C8553A77D3B942B
+/set irc.server.DecentralizedWeb.ssl_fingerprint 61298D370ECCE96A823D7A3376A9BE6D450D2CB5719D9BD3B51C133A605AB554
 
 
 ##[scripts]
